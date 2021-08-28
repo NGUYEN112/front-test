@@ -1,0 +1,111 @@
+body {
+    // background: url('/images/Ảnh-17.png') no-repeat center center fixed; 
+    background-color: #f0f0f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  }
+
+  html {
+    font-size: 62.5%; //1rem = 10px
+    background-color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin flex($align:flex-start , $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+$text-color : #2a3f8f;
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: $text-color;
+    margin: 0;
+}
+
+.container {
+    margin: 3rem 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    // padding-right: 1rem;
+    background-color: white;
+    height: 70vh;
+
+}
+
+.logo {
+    width: 200px;
+    padding-left: 3rem;
+}
+
+  .header {
+    padding-top: 3rem;
+    font-weight: bold;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    &__inner {
+        @include flex(center,space-between);
+        background-color: white;
+        padding: 1rem;
+    }
+
+    &__menu {
+        &-list {
+            @include flex(center);
+            list-style-type: none;
+        }
+        &-item {
+            margin-left: 5rem;
+            &:last-child {
+                margin-right: 8rem;
+            }
+        }
+        &-link {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@mixin title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    
+    text-transform: uppercase;
+}
+
+.content {
+    &__title {
+        @include title();
+    }
+    &__inner {
+        padding: 5rem;
+    }
+    &__description {
+        padding: 7rem;
+        font-size: 2rem;
+        color: black;
+        
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}

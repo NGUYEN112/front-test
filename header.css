@@ -1,0 +1,95 @@
+body {
+  background-color: #f0f0f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  color: #2a3f8f;
+  margin: 0;
+}
+
+.container {
+  margin: 3rem 5rem;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  height: 70vh;
+}
+
+.logo {
+  width: 200px;
+  padding-left: 3rem;
+}
+
+.header {
+  padding-top: 3rem;
+  font-weight: bold;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: white;
+  padding: 1rem;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+.header__menu-item {
+  margin-left: 5rem;
+}
+.header__menu-item:last-child {
+  margin-right: 8rem;
+}
+.header__menu-link {
+  font-size: 1.7rem;
+}
+
+.content__title {
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.content__inner {
+  padding: 5rem;
+}
+.content__description {
+  padding: 7rem;
+  font-size: 2rem;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*# sourceMappingURL=header.css.map */
